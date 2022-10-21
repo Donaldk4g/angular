@@ -1,0 +1,16 @@
+<ion-content *ngIf="allLocations">
+  <ion-list>
+    <ion-list-header>
+      Listado de locaciones
+    </ion-list-header>
+
+    <ion-item *ngFor = "let location of allLocations.results " (click) = "openModal(location)">
+     
+      <ion-label>
+        <h2>{{ location.name }}</h2>
+        <h3>Tipo: {{ location.type }}</h3>
+        <p>Dimension: {{ location.dimension}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

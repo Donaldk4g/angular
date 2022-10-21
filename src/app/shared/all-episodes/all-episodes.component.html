@@ -1,0 +1,20 @@
+
+<ion-content *ngIf="allEpisodes">
+  <ion-list>
+    <ion-list-header>
+      Listado de episodios
+    </ion-list-header>
+
+    <ion-item *ngFor = "let episode of allEpisodes.results " (click) = "openModal(episode)">
+      
+      <ion-label>
+        <h2>{{ episode.name }}</h2>
+        <p>Id: {{ episode.id }}</p>
+        <p>Episodio: {{ episode.episode }}</p>
+        <p>Fecha al aire: {{ episode.air_date}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+

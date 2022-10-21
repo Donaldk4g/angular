@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label>DETALLE DEL LOCACIONES</ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="locationdetail">
+  <ion-grid>
+    
+      <ion-col>
+        <h3><b>Nombre: </b> {{ location.name }}</h3>
+        <h3><b>tipo: </b> {{ location.type }}</h3>
+        <h3><b>Dimension: </b> {{ location.dimension }}</h3>
+       
+      </ion-col>
+    
+
+    
+  </ion-grid>
+</ion-content>
